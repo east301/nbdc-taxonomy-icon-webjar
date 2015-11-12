@@ -53,7 +53,7 @@ def main():
                 fout.write(source, destination)
 
         #
-        destination = '{}/{}/species.json'.format(webjar_path_prefix, args.name, args.version)
+        destination = '{}/{}/{}/species.json'.format(webjar_path_prefix, args.name, args.version)
         fout.writestr(destination, json.dumps(sorted(species)))
 
 
